@@ -1,0 +1,736 @@
+body {
+    font: 400 18px/28px Inter, sans-serif;
+    background: #efeff2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 1440px;
+    height: 46px;
+    padding: 36px 0 0;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1440px;
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header__left {
+    display: flex;
+    align-items: center;
+    gap: 68px;
+
+}
+
+.logo {
+    font: 800 18px/28px Inter, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: #19191C;
+}
+
+header .header__left img {
+    height: 40px;
+}
+
+header nav ul {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    gap: 48px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a, .header__link {
+    text-decoration: none;
+    color: #19191C;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+header .header__right {
+    display: flex;
+    gap: 28px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .header__right button {
+    width: 153px;
+    height: 46px;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 700;
+    background: #19191C;
+    color: #EFEFF2;
+}
+
+header .header__right select {
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #19191C;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 230px;
+    background-image: url(../img/man2.png), url(../img/rectangle107.png), url(../img/ellipse21.png);
+    background-position: 90% 100%, 85% 100%, right top; /* Устанавливаем позицию фона для каждого изображения */
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.offer__holder {
+    width: 648px;
+    padding-top: 225px;
+    background: url(../img/ellipse20.png) 100% 100% no-repeat;
+}
+
+.offer__link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #504DEE;
+}
+
+.offer__title, .find-program__title {
+    max-width: 50%;
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+
+.offer__description, .find-program__description {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 62px;
+}
+
+.offer__description a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #504DEE;
+
+}
+
+.button {
+    background: #504DEE;
+    color: #FBFBFC;
+    border: none;
+    padding: 16px 37px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0 0 110px;
+}
+
+.offer__sale {
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+.offer__time {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.offer__list {
+    list-style: none;
+    margin-top: 225px;
+    flex-grow: 1;
+    position: relative;
+    display: block;
+}
+
+.offer__item {
+    position: absolute;
+    border: 2px solid #19191C;
+    padding: 16px 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.offer__marketer {
+    top: 0;
+    right: 10px;
+}
+
+.offer__illustrator {
+    top: -60px;
+    right: 220px;
+}
+
+.offer__animator {
+    top: 30px;
+    right: 390px;
+}
+
+.offer__programmer {
+    top: 170px;
+    right: 470px;
+}
+
+.offer__designer {
+    top: 380px;
+    right: 500px;
+}
+
+.offer__photographer {
+    bottom: 0;
+    right: 480px;
+}
+
+.learn {
+    background: #19191C;
+    color: #FBFBFC;
+    padding: 168px 0 0;
+    position: relative;
+    height: 589px;
+}
+
+.learn__text {
+    position: absolute;
+    left: 12%;
+    width: 35%;
+    top: 150px;
+}
+
+.learn__title {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.learn__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.learn__counter {
+    position: absolute;
+    left: 52%;
+    top: 168px;
+}
+
+.learn__counter-item {
+    position: relative;
+    display: inline-block;
+    width: 178px;
+    height: 140px;
+    border-bottom: 4px solid #FBFBFC;
+    margin-left: 56px;
+}
+
+.learn__counter-number {
+    position: absolute;
+    font-size: 58px;
+    line-height: 0;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+}
+
+.learn__counter-descript {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.discover {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.discover__title {
+    width: 594px;
+    height: 140px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70.19px;
+    text-align: left;
+}
+
+.discover__list li {
+    display: inline;
+    height: 28px;
+}
+
+.discover__list {
+    padding: 0;
+}
+
+.discover__button {
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-right: auto;
+}
+
+.discover__list li:first-child .discover__button {
+    font-weight: 700;
+    line-height: 21.78px;
+    border-bottom: 4px solid #19191C;
+
+}
+
+.discover__list li:last-child {
+    float: right;
+}
+
+.seemore {
+    display: inline-block;
+    text-decoration: none;
+    color: #19191C;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+
+}
+
+.seemore img {
+    max-height: 28px;
+    padding-left: 18px;
+    vertical-align: middle;
+}
+
+.discover__cards {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.discover__card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+}
+
+.discover__card-lenght {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #6D6D77;
+}
+
+.find-program {
+    position: relative;
+    background-color: #DEEFE4;
+    height: 596px;
+    vertical-align: middle;
+}
+
+.find-program__text {
+    position: absolute;
+    top: 168px;
+    left: 15%;
+    width: 30%;
+}
+
+.find-program__form {
+    position: absolute;
+    top: 188px;
+    left: 50%;
+    width: 40%;
+}
+
+.find-program__button {
+    padding: 10px 40px;
+    background-color: #19191C;
+    color: #FBFBFC;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+}
+
+input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #19191C;
+}
+
+.find-program__form input {
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+    height: 30px;
+}
+
+/* Стили для footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 536px;
+    background: #19191C;
+    color: #fff;
+    padding: 68px 0 0;
+}
+
+footer .container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap:wrap;
+}
+
+footer .column {
+    width: 20%;
+}
+
+.logo2 {
+    color: #FBFBFC;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.logo2 img {
+    height: 40px;
+}
+
+footer .contact {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
+
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    color: #EFEFF2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    padding: 6px 0;
+
+}
+
+footer ul li a {
+    color: #EFEFF2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+footer .copyright {
+    margin-top: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6D6D77;
+
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container, header, .discover, footer .container {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    header nav ul {
+        gap: 30px;
+    }
+
+    header .header__right button, header .header__right select {
+        font-size: 16px;
+    }
+
+    .offer {
+        padding: 0 0 150px;
+        background-position: 90% 100%, 85% 100%, right top;
+    }
+
+    .offer__holder {
+        width: 50%;
+        padding-top: 130px;
+        text-align: center;
+    }
+
+    .offer__title, .find-program__title, .learn__title, .discover__title {
+        font-size: 38px;
+        line-height: 58px;
+        margin: 10px;
+        height: unset;
+    }
+
+    .offer__description, .find-program__description, .learn__description, .discover__card-lenght {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .offer__marketer {
+        top: 20px;
+        right: 20px;
+    }
+
+    .offer__illustrator {
+        top: -60px;
+        right: 20px;
+    }
+
+    .offer__animator {
+        top: 100px;
+        right: 20px;
+        left: unset;
+    }
+
+    .offer__programmer {
+        top: 180px;
+        right: 20px;
+        left: unset;
+    }
+
+    .offer__designer {
+        top: 260px;
+        right: 20px;
+        left: unset;
+    }
+
+    .offer__photographer {
+        bottom: unset;
+        top: 340px;
+        right: 20px;
+        left: unset;
+    }
+
+    .button, .find-program__button, .header__right button {
+        font-size: 16px;
+        padding: 14px 30px;
+    }
+
+    .learn {
+        padding: 100px 0 0;
+        height: auto;
+    }
+
+    .learn__text, .learn__counter {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .learn__counter-item {
+        margin: 20px;
+    }
+
+    .learn__description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 0 50px;
+    }
+
+    .discover__cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .find-program {
+        height: auto;
+        padding: 40px 60px;
+    }
+
+    .find-program__text, .find-program__form {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+
+    footer {
+        padding: 40px 0 20px;
+        height: auto;
+    }
+
+    footer .column {
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    footer ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    header .header__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: unset;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    header .header__right {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .offer {
+        flex-direction: column;
+        padding: 0 0 100px;
+    }
+
+    .offer__holder {
+        padding-top: 100px;
+    }
+
+    .offer__title, .find-program__title, .learn__title, .discover__title {
+        font-size: 36px;
+        line-height: 46px;
+        width: 95%;
+    }
+
+    .offer__description, .find-program__description, .learn__description, .discover__card-lenght {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .button, .find-program__button, .header__right button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .learn {
+        padding: 50px 0 0;
+        height: auto;
+    }
+
+    .learn__counter-item {
+        margin: 10px 0;
+    }
+
+    .discover__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .find-program {
+        /*margin: 10px;*/
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .column {
+        text-align: center;
+    }
+
+    footer ul li {
+        font-size: 14px;
+    }
+}
